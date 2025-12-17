@@ -1,85 +1,178 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forja Mental | Desenvolvimento Pessoal</title>
-  <meta name="description" content="Desenvolvimento pessoal com foco em mentalidade, disciplina e evolução. Blog, e-books e roupas premium." />  <style>
-    :root{
-      --bg:#0b0b0b;--bg2:#121212;--card:#181818;--txt:#f1f1f1;--muted:#b5b5b5;--brand:#e63946;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7}
-    header{background:rgba(0,0,0,.9);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
-    nav{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
-    nav a{color:var(--txt);text-decoration:none;margin-left:18px;font-weight:600}
-    main{max-width:1200px;margin:auto}
-    section{padding:90px 20px}
-    h1,h2,h3{line-height:1.25}
-    .hero{padding:120px 20px;text-align:center;background:radial-gradient(80% 80% at 50% 0%,#1a1a1a 0%,#0b0b0b 60%)}
-    .hero p{max-width:720px;margin:22px auto 34px;color:var(--muted)}
-    .btn{display:inline-block;background:var(--brand);color:#fff;padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:700}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
-    .card{background:linear-gradient(180deg,#1a1a1a,#121212);border:1px solid #222;border-radius:14px;padding:28px}
-    .card p{color:var(--muted)}
-    .card a{color:var(--brand);font-weight:700;text-decoration:none}
-    .badge{display:inline-block;font-size:.75rem;letter-spacing:.04em;padding:6px 10px;border-radius:999px;background:#1f1f1f;color:#ddd;margin-bottom:12px}
-    .divider{height:1px;background:#1e1e1e;margin:40px 0}
-    footer{background:#000;padding:40px 20px;text-align:center;color:#777}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    /* Blog pages */
-    .article-hero{padding:90px 20px 40px}
-    .article{max-width:820px;margin:auto;padding:20px}
-    .article p{color:#d6d6d6}
-    .article ul{margin-left:18px}
-  </style></head>
+<title>Blog | Forja Mental</title>
+<meta name="description" content="Artigos sobre disciplina, mentalidade forte e propósito. Desenvolvimento pessoal aplicado à vida real." />
+
+<style>
+:root{
+  --bg:#0b0b0b;--card:#181818;--txt:#f1f1f1;
+  --muted:#b5b5b5;--brand:#e63946;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Inter,Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.7
+}
+header{
+  background:rgba(0,0,0,.9);
+  position:sticky;top:0;z-index:10
+}
+nav{
+  max-width:1200px;margin:auto;
+  padding:18px 20px;
+  display:flex;justify-content:space-between
+}
+nav a{
+  color:var(--txt);text-decoration:none;
+  margin-left:18px;font-weight:600
+}
+main{max-width:1200px;margin:auto}
+section{padding:90px 20px}
+.hero{
+  text-align:center;
+  background:radial-gradient(80% 80% at 50% 0%,#1a1a1a,#0b0b0b)
+}
+.hero p{max-width:720px;margin:20px auto;color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px
+}
+.card{
+  background:linear-gradient(180deg,#1a1a1a,#121212);
+  border-radius:16px;
+  overflow:hidden;
+  transition:.3s
+}
+.card:hover{transform:translateY(-6px)}
+
+.post-image{
+  width:100%;height:200px;overflow:hidden
+}
+.post-image img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:.4s
+}
+.card:hover img{transform:scale(1.05)}
+
+.card-content{padding:26px}
+.badge{
+  font-size:.75rem;
+  background:#1f1f1f;
+  padding:6px 12px;
+  border-radius:999px;
+  display:inline-block;
+  margin-bottom:12px
+}
+.card p{color:var(--muted)}
+.card a{
+  color:var(--brand);
+  text-decoration:none;
+  font-weight:700
+}
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:#777
+}
+</style>
+</head>
+
 <body>
+
 <header>
-  <nav>
-    <strong>Forja Mental</strong>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="#loja">Loja</a>
-      <a href="#youtube">YouTube</a>
-    </div>
-  </nav>
-</header><main><section class="hero">
-  <h1>Desenvolvimento Pessoal Aplicado à Vida Real</h1>
-  <p>Conteúdo profundo, artigos individuais, produtos e identidade para quem decidiu evoluir com disciplina.</p>
-  <a href="blog.html" class="btn">Acessar Blog</a>
-</section><section id="blog">
-  <h2>Blog</h2>
-  <div class="grid">
-    <div class="card">
-      <span class="badge">Mentalidade</span>
-      <h3>Disciplina não é motivação</h3>
-      <p>Entenda por que disciplina sustenta resultados quando a motivação acaba.</p>
-      <a href="disciplina-nao-e-motivacao.html">Ler artigo</a>
-    </div>
-    <div class="card">
-      <span class="badge">Mentalidade</span>
-      <h3>Mentalidade forte se constrói</h3>
-      <p>Nada nasce pronto. Mente forte é treino diário.</p>
-      <a href="mentalidade-forte.html">Ler artigo</a>
-    </div>
-    <div class="card">
-      <span class="badge">Propósito</span>
-      <h3>Propósito na vida real</h3>
-      <p>Propósito não é dom. É construção prática.</p>
-      <a href="proposito-na-vida-real.html">Ler artigo</a>
-    </div>
+<nav>
+<strong>Forja Mental</strong>
+<div>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="index.html#loja">Loja</a>
+  <a href="https://youtube.com/@bondivulgacao" target="_blank">YouTube</a>
+</div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<h1>Blog Forja Mental</h1>
+<p>Conteúdo profundo sobre disciplina, mentalidade e propósito.</p>
+</section>
+
+<section>
+<div class="grid">
+
+<!-- Artigo 1 -->
+<div class="card">
+  <div class="post-image">
+    <img src="images/disciplina.jpg"
+     alt="Disciplina e foco no desenvolvimento pessoal" loading="lazy">
   </div>
-</section><section id="loja">
-  <h2>Loja</h2>
-  <div class="grid">
-    <div class="card"><h3>E-book – Desenvolvimento Pessoal</h3><p>Guia prático para foco, disciplina e clareza.</p><a href="https://go.hotmart.com/K103272680H" target="_blank">Comprar</a></div>
-    <div class="card"><h3>Roupa Esportiva – Estilo</h3><p>Conforto e identidade.</p><a href="https://s.shopee.com.br/9pWbUvyhxl" target="_blank">Comprar</a></div>
-    <div class="card"><h3>Roupa Esportiva – Liberdade</h3><p>Movimento livre.</p><a href="https://s.shopee.com.br/7AW2GGJIvc" target="_blank">Comprar</a></div>
+  <div class="card-content">
+    <span class="badge">Mentalidade</span>
+    <h3>Disciplina não é motivação</h3>
+    <p>Resultados duram quando a disciplina permanece.</p>
+    <a href="#">Ler artigo →</a>
   </div>
-</section><section id="youtube">
-  <h2>YouTube</h2>
-  <p>Conteúdo em vídeo sobre disciplina, mentalidade e evolução.</p>
-  <a class="btn" href="https://youtube.com/@bondivulgacao" target="_blank">Ir para o Canal</a>
-</section></main><footer>© 2025 Forja Mental — Desenvolvimento Pessoal</footer>
+</div>
+
+<!-- Artigo 2 -->
+<div class="card">
+  <div class="post-image">
+    <img src="images/mentalidade.jpg"
+     alt="Mentalidade forte construída com esforço" loading="lazy">
+  </div>
+  <div class="card-content">
+    <span class="badge">Mentalidade</span>
+    <h3>Mentalidade forte se constrói</h3>
+    <p>Mente forte nasce do treino diário.</p>
+    <a href="#">Ler artigo →</a>
+  </div>
+</div>
+
+<!-- Artigo 3 -->
+<div class="card">
+  <div class="post-image">
+    <img src="images/espelho.jpg"
+     alt="Autoconhecimento e reflexão pessoal" loading="lazy">
+  </div>
+  <div class="card-content">
+    <span class="badge">Consciência</span>
+    <h3>Quem você vê quando se encara?</h3>
+    <p>O espelho revela mais que aparência.</p>
+    <a href="#">Ler artigo →</a>
+  </div>
+</div>
+
+<!-- Artigo 4 -->
+<div class="card">
+  <div class="post-image">
+    <img src="images/proposito.jpg"
+     alt="Caminho do propósito e evolução pessoal" loading="lazy">
+  </div>
+  <div class="card-content">
+    <span class="badge">Propósito</span>
+    <h3>Propósito na vida real</h3>
+    <p>Propósito se constrói caminhando.</p>
+    <a href="#">Ler artigo →</a>
+  </div>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2025 Forja Mental — Desenvolvimento Pessoal
+</footer>
+
 </body>
 </html>
