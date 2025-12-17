@@ -1,0 +1,11 @@
+/site
+ ├── index.html
+ ├── blog.html
+ ├── loja.html
+ ├── artigo.html
+ ├── style.css
+ └── /images
+     ├── hero.jpg
+     ├── produto1.jpg
+     ├── produto2.jpg
+     └── blog1.jpg
